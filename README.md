@@ -44,7 +44,7 @@ Recordar que para Visual Studio Code, toca ejecutar los proyectos por linea de c
 
 Ejemplo: Se emplea el comando "dotnet run"
 
-C\Downloads\Archivos\PatronesDeDiseno2> dotnet run
+C\temp> dotnet run
 
 
 
