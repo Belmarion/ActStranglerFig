@@ -2,7 +2,7 @@
 
 ## Proposito
 Se pretende redireccionar el api monolitica y la api nueva, con el proceso por la api gateway sin afectar otros sitemas 
-hasta que se encuentre estable la migraci[on paulatina de los metodos correspodneintes de cada uno que dependen del servicio
+hasta que se encuentre estable la migración paulatina de los metodos correspodneintes de cada uno que dependen del servicio
 
 ## Comandos para desplegar a través de Docker
 
