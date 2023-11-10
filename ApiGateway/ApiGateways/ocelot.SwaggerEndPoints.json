@@ -1,0 +1,30 @@
+{
+  "SwaggerEndPoints": [
+    {
+      "Key": "ApiMonolitica",
+      "Config": [
+        {
+          "Name": "ApiMonolitica.Api",
+          "Version": "v1",
+          "Service": {
+            "Name": "ApiMonolitica",
+            "Path": "/swagger/v1/swagger.json"
+          }
+        }
+      ]
+    },
+    {
+      "Key": "ApiMicro",
+      "Config": [
+        {
+          "Name": "ApiMicro.Api",
+          "Version": "v1",
+          "Service": {
+            "Name": "ApiMicro",
+            "Path": "/swagger/v1/swagger.json"
+          }
+        }
+      ]
+    }
+  ]
+}

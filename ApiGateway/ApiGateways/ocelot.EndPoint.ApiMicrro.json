@@ -1,0 +1,12 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/{everything}",
+      "ServiceName": "ApiMicro",
+      "UpstreamPathTemplate": "/ApiMicro/api/{everything}",
+      "UpstreamHttpMethod": [ "Post", "Get", "Put", "Delete", "Patch" ],
+      "SwaggerKey": "ApiMicro",
+      "DangerousAcceptAnyServerCertificateValidator": true
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/{everything}",
+      "ServiceName": "ApiMonolitica",
+      "UpstreamPathTemplate": "/ApiMonolitica/api/{everything}",
+      "UpstreamHttpMethod": [ "Post", "Get", "Put", "Delete", "Patch" ],
+      "SwaggerKey": "ApiMonolitica",
+      "DangerousAcceptAnyServerCertificateValidator": true
+    }
+  ]
+}
