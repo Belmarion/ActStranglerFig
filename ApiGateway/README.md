@@ -7,7 +7,7 @@ hasta que se encuentre estable la migración paulatina de los metodos correspodn
 ## Comandos para desplegar a través de Docker
 
 ### Construcción de la imagen
-```
+```Docker
 docker build -t gateway -f Dockerfile .
 ```
 
