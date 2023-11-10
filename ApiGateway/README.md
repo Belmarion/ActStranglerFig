@@ -12,12 +12,18 @@ docker build -t gateway -f Dockerfile .
 ```
 
 ### Creación del nuevo Contenedor
-```docker create --name gateway gateway```
+```
+docker create --name gateway gateway
+```
 
 ### Listar el Contenedor creado anteriormente
-```docker ps -a```
+```
+docker ps -a
+```
 
 ### Iniciar la nueva instancia apartir de la imagen en modo desasociado con la especificación de puerto interno y saliente
-```docker run -d --name ApiGateway -p 8080:8080 gateway```
+```
+docker run -d --name ApiGateway -p 8080:8080 gateway
+```
 
 
