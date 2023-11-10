@@ -3,7 +3,7 @@ LABEL stage=builder
 
 WORKDIR /backend
 COPY . .
-WORKDIR /backend/Sod.Dlog.ApiGateway/
+
 
 RUN dotnet restore "ApiGateway.csproj"
 RUN dotnet publish "ApiGateway.csproj" -c Release -o /app/publish
