@@ -19,8 +19,9 @@ docker ps -a
 ```
 
 ### Iniciar la nueva instancia apartir de la imagen en modo desasociado con la especificación de puerto interno y saliente
+se crea una red entre Containers para poder verse entre si todas las apis, la creación de la red quedara en el [README.md](..%2FApiGateway%2FREADME.md)
 ```
-docker run -d --name ApiGeoKml -p 8081:8081 geokml
+docker run -d --network=mi-red-containers --name apigeoKml -p 8081:8081 geokml
 ```
 
 

@@ -16,5 +16,6 @@ ENV TZ=America/Bogota
 WORKDIR /app
 COPY --from=publish /app/publish .
 EXPOSE 8081
+EXPOSE 443
 ENTRYPOINT ["dotnet", "UniSabana.ApiLibreriaKml.dll"]
 

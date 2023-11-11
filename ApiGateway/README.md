@@ -6,6 +6,13 @@ hasta que se encuentre estable la migración paulatina de los metodos correspodn
 
 ## Comandos para desplegar a través de Docker
 
+### Crear Red Interna entre Containers
+el nombre de la red se creara con el nombre "mi-red-containers"
+````
+docker network create mi-red-containers
+
+````
+
 ### Construcción de la imagen
 ```
 docker build -t gateway -f Dockerfile .
@@ -23,8 +30,20 @@ docker ps -a
 
 ### Iniciar la nueva instancia apartir de la imagen en modo desasociado con la especificación de puerto interno y saliente
 ```
-docker run -d --name ApiGateway -p 8080:8080 gateway
+docker run -d --network=mi-red-containers --name apiagateway -p 8080:8080 gateway
 ```
+
+### Verificación de la red interna creada
+inspecciono las ips asignadas dentro de mi red para poder realizar la modificación
+````
+docker network inspect mi-red-containers
+````
+
+### Modifiación de apuntamiento
+accedemos al bash de Docker despues del -it es el nombre del Container en mi caso es "apiagateway"
+````
+docker exec -it apiagateway /bin/bash
+````
 
 ### Probar sin implementarlo en Docker con los puertos establecidos
 Debe ejecutar las 3 apis (ApiMigrada, ApiMonolitica y la Apigateway) y cambiar el "appsettings.json" correspondientes a los Endpoint con su respectivo protocolo y puerto

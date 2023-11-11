@@ -16,6 +16,7 @@ ENV TZ=America/Bogota
 WORKDIR /app
 COPY --from=publish /app/publish .
 EXPOSE 8080
+EXPOSE 443
 ENTRYPOINT ["dotnet", "ApiGateway.dll"]
 
 #ADD PERMISES
