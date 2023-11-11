@@ -10,7 +10,6 @@ hasta que se encuentre estable la migración paulatina de los metodos correspodn
 el nombre de la red se creara con el nombre "mi-red-containers"
 ````
 docker network create mi-red-containers
-
 ````
 
 ### Construcción de la imagen
@@ -56,45 +55,60 @@ Ahora procederemos a modificar el archivo:
 nano appsettings.json
 ```
 > **Importante: <br>**
+> 
 > en caso que al ejecutar el comando anteriror genere lo siguiente:
+> 
 >```
 >root@d6ee52edd8f5:/app# nano appsettings.json
 >bash: nano: command not found
 >```
+>
 >Procederemos a instalar nano con el siguiente comando:
+> 
 >```
 >apt update
 >apt install nano
 >```
+>
 >una vez termiando podemos volver a ejecutar el comando
+> 
 >```
 >nano appsettings.json
 >```
+
 ![image](https://github.com/Belmarion/ActStranglerFig/assets/63727266/2f97a9eb-09be-44e0-b1e6-d889cdf77f6a)
 
 Modificamos los Endpoint con las direcciones internas del la red que consultamos con el comando
+
 ````
 docker network inspect mi-red-containers
 ````
+
 ![image](https://github.com/Belmarion/ActStranglerFig/assets/63727266/66009fed-8d76-4267-9d70-d688030510a3)
 
 Deberia quedar algo como lo siguiente:
+
 ![image](https://github.com/Belmarion/ActStranglerFig/assets/63727266/3137c70f-afa3-40cd-9dc4-ef8c0940390b)
 
 luego con presionamos "Ctrl + o" para escribirlo y luego "Enter"
+
 ![image](https://github.com/Belmarion/ActStranglerFig/assets/63727266/cdbe6fae-94c2-4c7e-bcb9-57d88c108d3c)
 
 Luego precionamos "Ctrl + x" para salir del editor y luego escribiremos "exit" y presionaremos "Enter"
+
 ![image](https://github.com/Belmarion/ActStranglerFig/assets/63727266/32024b31-fa8f-4afd-b10d-96f2875dfdba)
 
 ahora ejecutamos el comando:
+
 ```
 docker restart apiagateway
 ```
 
 ### Probar sin implementarlo en Docker con los puertos establecidos
+
 Debe ejecutar las 3 apis (ApiMigrada, ApiMonolitica y la Apigateway) y cambiar el "appsettings.json" correspondientes a los Endpoint con su respectivo protocolo y puerto
 en el parametro "DownstreamPath"
+
 ````
 {
   "Services": {
@@ -113,15 +127,19 @@ en el parametro "DownstreamPath"
   },
   "AllowedHosts": "*"
 }
-
 ````
+
 ### Implementación con un DNS con certificado no seguro
+
 Para poder ejecutar las Apis con un DNS con certificado no valido TLS o SSL, se debe agregar a los archivos
 "ocelot.EndPoint.*.json" en este caso seria "ocelot.EndPoint.ApiMonolitica.json" se debe agregar la linea:
+
 ````
 "DangerousAcceptAnyServerCertificateValidator": true
 ````
+
 deberia verse como el siguiente:
+
 ````
 {
   "Routes": [
