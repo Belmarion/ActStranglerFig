@@ -49,6 +49,9 @@ Luego procederemos a buscar el archivo listamos el directorio
 ````
 ls
 ````
+![image](https://github.com/Belmarion/ActStranglerFig/assets/63727266/98523ad3-3e3c-42c7-b927-2583e9e119f1)
+
+
 
 ### Probar sin implementarlo en Docker con los puertos establecidos
 Debe ejecutar las 3 apis (ApiMigrada, ApiMonolitica y la Apigateway) y cambiar el "appsettings.json" correspondientes a los Endpoint con su respectivo protocolo y puerto
