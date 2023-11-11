@@ -42,7 +42,10 @@ Descargamos en el apartado "Build apps - SDK" el correspodiente a nuestro sistem
 
 Recordar que para Visual Studio Code, toca ejecutar los proyectos por linea de comandos, se debe abrir el terminal y ejecutar:
 
-Ejemplo: Se emplea el comando "dotnet run"
+Ejemplo: Se emplea el comando 
+```
+dotnet run
+```
 
 C\temp> dotnet run
 
