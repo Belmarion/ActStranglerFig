@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ApiGateway"
+    "\\.github",
+    "\\ApiGateway",
+    "\\ApiMigrada",
+    "\\ApiMonolitica"
   ],
-  "SelectedNode": "\\ApiGateway",
+  "SelectedNode": "\\ApiMonolitica\\README.md",
   "PreviewInSolutionExplorer": false
 }
