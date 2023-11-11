@@ -8,6 +8,16 @@ Assembly? assembly = Assembly.GetEntryAssembly();
 AssemblyInformationalVersionAttribute? versionAttribute = assembly?.GetCustomAttribute<AssemblyInformationalVersionAttribute>();
 string? assemblyVersion = versionAttribute?.InformationalVersion;
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("CorsPolicy",
+        builder => builder
+            .AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+    );
+});
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

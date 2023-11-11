@@ -1,5 +1,5 @@
 using System.Net.NetworkInformation;
-
+using ApiGateway;
 using MMLib.Ocelot.Provider.AppConfiguration;
 using MMLib.SwaggerForOcelot.DependencyInjection;
 
@@ -7,6 +7,7 @@ using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
+
 
 builder.Services.AddCors(options =>
 {
@@ -52,6 +53,12 @@ app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
 
 app.UseStaticFiles();
 
-app.UseSwaggerForOcelotUI(opt => { opt.RoutePrefix = string.Empty; }).UseOcelot().Wait();
+app.UseSwaggerForOcelotUI(opt => 
+{
+    opt.DocumentTitle = Resource.DocumentTitle;
+    opt.HeadContent = Resource.HeadContent;
+    opt.RoutePrefix = string.Empty;
+    opt.InjectStylesheet("/assets/swagger-ui.css");
+}).UseOcelot().Wait();
 
 app.Run();
