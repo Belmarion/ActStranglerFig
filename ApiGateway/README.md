@@ -51,6 +51,30 @@ ls
 ````
 ![image](https://github.com/Belmarion/ActStranglerFig/assets/63727266/98523ad3-3e3c-42c7-b927-2583e9e119f1)
 
+Ahora procederemos a modificar el archivo:
+```
+nano appsettings.json
+
+```
+en caso que al ejecutar el comando anteriror genere lo siguiente:
+```
+root@d6ee52edd8f5:/app# nano appsettings.json
+bash: nano: command not found
+```
+
+Procederemos a instalar nano con el siguiente comando:
+```
+apt update
+apt install nano
+```
+
+una vez termiando podemos volver a ejecutar el comando
+```
+nano appsettings.json
+
+```
+![image](https://github.com/Belmarion/ActStranglerFig/assets/63727266/2f97a9eb-09be-44e0-b1e6-d889cdf77f6a)
+
 
 
 ### Probar sin implementarlo en Docker con los puertos establecidos
