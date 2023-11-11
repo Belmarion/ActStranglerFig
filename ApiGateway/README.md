@@ -26,4 +26,51 @@ docker ps -a
 docker run -d --name ApiGateway -p 8080:8080 gateway
 ```
 
+### Probar sin implementarlo en Docker con los puertos establecidos
+Debe ejecutar las 3 apis (ApiMigrada, ApiMonolitica y la Apigateway) y cambiar el "appsettings.json" correspondientes a los Endpoint con su respectivo protocolo y puerto
+en el parametro "DownstreamPath"
+````
+{
+  "Services": {
+    "UniSabana.ApiLibreriaKml": {
+      "DownstreamPath": "http://localhost:8081"
+    },
+    "ApiMonolitica": {
+      "DownstreamPath": "http://localhost:8082"
+    }
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*"
+}
+
+````
+### Implementación con un DNS con certificado no seguro
+Para poder ejecutar las Apis con un DNS con certificado no valido TLS o SSL, se debe agregar a los archivos
+"ocelot.EndPoint.*.json" en este caso seria "ocelot.EndPoint.ApiMonolitica.json" se debe agregar la linea:
+````
+"DangerousAcceptAnyServerCertificateValidator": true
+````
+deberia verse como el siguiente:
+````
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/{everything}",
+      "ServiceName": "ApiMonolitica",
+      "UpstreamPathTemplate": "/ApiMonolitica/api/{everything}",
+      "UpstreamHttpMethod": [ "Post", "Get", "Put", "Delete", "Patch" ],
+      "SwaggerKey": "ApiMonolitica",
+      "DangerousAcceptAnyServerCertificateValidator": true
+    }
+  ]
+}
+````
+
+
+
 

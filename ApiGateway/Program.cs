@@ -52,6 +52,6 @@ app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
 
 app.UseStaticFiles();
 
-app.UseSwaggerForOcelotUI().UseOcelot().Wait();
+app.UseSwaggerForOcelotUI(opt => { opt.RoutePrefix = string.Empty; }).UseOcelot().Wait();
 
 app.Run();

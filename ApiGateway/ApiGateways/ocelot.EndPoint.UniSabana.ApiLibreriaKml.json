@@ -2,10 +2,10 @@
   "Routes": [
     {
       "DownstreamPathTemplate": "/api/{everything}",
-      "ServiceName": "ApiMicro",
-      "UpstreamPathTemplate": "/ApiMicro/api/{everything}",
+      "ServiceName": "UniSabana.ApiLibreriaKml",
+      "UpstreamPathTemplate": "/UniSabana.ApiLibreriaKml/api/{everything}",
       "UpstreamHttpMethod": [ "Post", "Get", "Put", "Delete", "Patch" ],
-      "SwaggerKey": "ApiMicro",
+      "SwaggerKey": "UniSabana.ApiLibreriaKml",
       "DangerousAcceptAnyServerCertificateValidator": true
     }
   ]

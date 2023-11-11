@@ -2,12 +2,8 @@
   "GlobalConfiguration": {
     "BaseUrl": "https://localhost:7200",
     "ServiceDiscoveryProvider": {
-      "Type": "AppConfiguration",
-      "PollingIntervalSeconds": 1000000
+      "Type": "AppConfiguration"
     }
-  },
-  "HttpHandlerOptions": {
-    "Timeout": "00:02:00"
   }
 }
 

@@ -14,13 +14,13 @@
       ]
     },
     {
-      "Key": "ApiMicro",
+      "Key": "UniSabana.ApiLibreriaKml",
       "Config": [
         {
-          "Name": "ApiMicro.Api",
+          "Name": "UniSabana.ApiLibreriaKml",
           "Version": "v1",
           "Service": {
-            "Name": "ApiMicro",
+            "Name": "UniSabana.ApiLibreriaKml",
             "Path": "/swagger/v1/swagger.json"
           }
         }
