@@ -45,6 +45,10 @@ accedemos al bash de Docker despues del -it es el nombre del Container en mi cas
 docker exec -it apiagateway /bin/bash
 ````
 ![image](https://github.com/Belmarion/ActStranglerFig/assets/63727266/c76846bc-fbff-4431-8c1a-c4937905da64)
+Luego procederemos a buscar el archivo listamos el directorio
+````
+ls
+````
 
 ### Probar sin implementarlo en Docker con los puertos establecidos
 Debe ejecutar las 3 apis (ApiMigrada, ApiMonolitica y la Apigateway) y cambiar el "appsettings.json" correspondientes a los Endpoint con su respectivo protocolo y puerto
