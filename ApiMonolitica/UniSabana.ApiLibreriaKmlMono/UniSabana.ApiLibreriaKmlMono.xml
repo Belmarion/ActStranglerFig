@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UniSabana.ApiLibreriaKmlMono</name>
+    </assembly>
+    <members>
+        <member name="P:UniSabana.ApiLibreriaKml.Resource.ResourceManager">
+            <summary>
+              Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+            </summary>
+        </member>
+        <member name="P:UniSabana.ApiLibreriaKml.Resource.Culture">
+            <summary>
+              Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+              búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+            </summary>
+        </member>
+        <member name="P:UniSabana.ApiLibreriaKml.Resource.Description">
+            <summary>
+              Busca una cadena traducida similar a Configurar en Resource.resx.
+            </summary>
+        </member>
+        <member name="P:UniSabana.ApiLibreriaKml.Resource.DocumentTitle">
+            <summary>
+              Busca una cadena traducida similar a Configurar en Resource.resx.
+            </summary>
+        </member>
+        <member name="P:UniSabana.ApiLibreriaKml.Resource.HeadContent">
+            <summary>
+              Busca una cadena traducida similar a &lt;div class=&apos;cont-sod&apos;&gt;    &lt;div id=&apos;img-cont&apos;&gt;&lt;img src=&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACJCAYAAAC1pQNgAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAADnQAAA50BvNxDqgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAABAFSURBVHic7d3bj5vHecfx7/PMe+CZu9KeRXF3JVmSpaRuGqANChT1RVOktes4PkRRYjmOUyR20qRtLlynSFCjQdzmrmjRP6B/QBPkrjB6lys3jW0gduSDLEuWFK0ku9kl98DT+04vuBtbEkmduOS+9HyAvdDiFTkkfzuceWbe9wXHcRzHcRzHcRzHcRzHcRzHcRzHcRzHcRzHcRzHcRzHcRzHcRzHcRzHaZNhNyDhdHp6Ou37fqiq9rYeQNV6nrdx6tSper8bN8q8YTcgyfbsOTzu+40Tgv1 [resto de la cadena truncado]&quot;;.
+            </summary>
+        </member>
+        <member name="P:UniSabana.ApiLibreriaKml.Resource.Title">
+            <summary>
+              Busca una cadena traducida similar a Configurar en Resource.resx.
+            </summary>
+        </member>
+        <member name="P:UniSabana.ApiLibreriaKml.Resource.UrlHome">
+            <summary>
+              Busca una cadena traducida similar a https://www.homecenter.com.co/homecenter-co/.
+            </summary>
+        </member>
+        <member name="T:UniSabana.ApiLibreriaKml.Response.ApiResponse`1">
+            <summary>
+            ApiResponse
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:UniSabana.ApiLibreriaKml.Response.ApiResponse`1.#ctor">
+            <summary>
+            constructor
+            </summary>
+        </member>
+        <member name="M:UniSabana.ApiLibreriaKml.Response.ApiResponse`1.#ctor(System.Boolean,System.Boolean,System.String,System.Collections.Generic.IEnumerable{System.String},`0)">
+            <summary>
+            ApiResponse
+            </summary>
+            <param name="isSuccessful"></param>
+            <param name="isError"></param>
+            <param name="errorMessage"></param>
+            <param name="messages"></param>
+            <param name="result"></param>
+        </member>
+        <member name="M:UniSabana.ApiLibreriaKml.Response.ApiResponse`1.CreateSuccessful(`0)">
+            <summary>
+            CreateSuccessful
+            </summary>
+            <param name="result"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UniSabana.ApiLibreriaKml.Response.ApiResponse`1.CreateUnsuccessful(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            CreateUnsuccessful
+            </summary>
+            <param name="messages"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UniSabana.ApiLibreriaKml.Response.ApiResponse`1.CreateError(System.String)">
+            <summary>
+            CreateError
+            </summary>
+            <param name="errorMessage"></param>
+            <returns></returns>
+        </member>
+        <member name="T:UniSabana.ApiLibreriaKml.Response.ApiResponseBase`1">
+            <summary>
+            ApiResponseBase
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:UniSabana.ApiLibreriaKml.Response.ApiResponseBase`1.ErrorMessage">
+            <summary>
+            ErrorMessage
+            </summary>
+        </member>
+        <member name="P:UniSabana.ApiLibreriaKml.Response.ApiResponseBase`1.IsError">
+            <summary>
+            IsError
+            </summary>
+        </member>
+        <member name="P:UniSabana.ApiLibreriaKml.Response.ApiResponseBase`1.IsSuccessful">
+            <summary>
+            IsSuccessful
+            </summary>
+        </member>
+        <member name="P:UniSabana.ApiLibreriaKml.Response.ApiResponseBase`1.Messages">
+            <summary>
+            Messages
+            </summary>
+        </member>
+        <member name="P:UniSabana.ApiLibreriaKml.Response.ApiResponseBase`1.Result">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

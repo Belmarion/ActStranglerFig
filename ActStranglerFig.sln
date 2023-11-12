@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiMigrada", "ApiMigrada", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniSabana.ApiLibreriaKml", "ApiMigrada\UniSabana.ApiLibreriaKml\UniSabana.ApiLibreriaKml.csproj", "{E5471FF1-20D9-4D8A-A70C-D082C8332A8B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiMonolitica", "ApiMonolitica", "{E12F5690-37F9-42C3-BB45-AACD127B4005}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniSabana.ApiLibreriaKmlMono", "ApiMonolitica\UniSabana.ApiLibreriaKmlMono\UniSabana.ApiLibreriaKmlMono.csproj", "{A06FD479-E899-4849-8335-280B5FD7A4A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,8 +30,13 @@ Global
 		{E5471FF1-20D9-4D8A-A70C-D082C8332A8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5471FF1-20D9-4D8A-A70C-D082C8332A8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5471FF1-20D9-4D8A-A70C-D082C8332A8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A06FD479-E899-4849-8335-280B5FD7A4A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A06FD479-E899-4849-8335-280B5FD7A4A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A06FD479-E899-4849-8335-280B5FD7A4A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A06FD479-E899-4849-8335-280B5FD7A4A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E5471FF1-20D9-4D8A-A70C-D082C8332A8B} = {92A9C385-E43B-4283-8561-137A24A6C831}
+		{A06FD479-E899-4849-8335-280B5FD7A4A0} = {E12F5690-37F9-42C3-BB45-AACD127B4005}
 	EndGlobalSection
 EndGlobal
