@@ -23,6 +23,15 @@ services:
       - "8081:8081"
     networks:
       - mi-red-containers
+  apimonolitica:
+    build:
+      context: ./ApiMonolitica/UniSabana.ApiLibreriaKmlMono
+      dockerfile: ./Dockerfile
+    container_name: ApiMonolitica
+    ports:
+      - "8082:8082"
+    networks:
+      - mi-red-containers
 networks:
   mi-red-containers:
     name: mi-red-containers

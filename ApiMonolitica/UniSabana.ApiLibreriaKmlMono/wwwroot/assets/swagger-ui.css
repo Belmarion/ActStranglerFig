@@ -1,0 +1,204 @@
+﻿/*body {
+    background-image: url("images/casita.png");
+}*/
+
+div.topbar {
+    background-color: #003366 !important;
+}
+
+h2, h3 {
+    color: #003366 !important;
+}
+
+.opblock-summary-get > button > span.opblock-summary-method {
+    background-color: #003366 !important;
+}
+
+.opblock-summary-post > button > span.opblock-summary-method {
+    background-color: #0F8A5F !important;
+}
+
+.opblock-summary-delete > button > span.opblock-summary-method {
+    background-color: #CC231E !important;
+}
+
+.title-head {
+    color: white !important;
+    font-size: 4rem;
+    margin-top: 0rem;
+    margin-left: 0.5rem;
+    font-family: Lato, sans-serif;
+}
+
+.title-display {
+    align-items: center;
+    display: flex;
+}
+
+.subtitle {
+    color: white !important;
+    font-size: 16px;
+    text-align: justify;
+    /*word-spacing: 15px;*/
+}
+
+.time {
+    text-align: right;
+    color: rgba(0, 0, 0, 0.658);
+}
+
+.home_icon {
+    height: 80px;
+    align-items: center;
+    text-align: center;
+    margin-top: 0px;
+}
+
+#img-cont {
+    display: inline-table;
+    margin: 1px;
+}
+
+.css-1mhk73l-MuiButtonBase-root-MuiTab-root {
+    font-size: 0.8rem !important;
+    font-weight: bold !important;
+}
+
+    .css-1mhk73l-MuiButtonBase-root-MuiTab-root.Mui-selected {
+        font-size: 1rem !important;
+    }
+
+button.Mui-selected {
+    font-size: 1rem !important;
+}
+
+button.MuiButtonBase-root {
+    font-size: 0.8rem !important;
+    font-weight: bold !important;
+}
+
+.css-mhc70k-MuiGrid-root > .MuiGrid-item {
+    padding-top: 0px;
+}
+
+@media (max-width: 1700px) {
+    .title {
+        color: white;
+        font-size: 4rem;
+        margin-top: 0rem;
+        margin-left: 1.3rem;
+    }
+}
+
+@media (max-width: 1496px) {
+    .title {
+        color: white;
+        font-size: 4rem;
+        margin-top: 0rem;
+        margin-left: 1.6rem;
+    }
+
+    .time {
+        text-align: left;
+        color: white;
+        margin-left: 30px !important;
+    }
+}
+
+@media (max-width: 1300px) {
+    .title {
+        color: white;
+        font-size: 4rem;
+        margin-top: 0rem;
+        margin-left: 2.5rem;
+    }
+
+    .time {
+        text-align: left;
+        color: white;
+        margin-left: 30px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .title {
+        color: white;
+        font-size: 3rem;
+        margin-top: 0rem;
+        margin-left: 2.5rem;
+    }
+
+    .time {
+        text-align: left;
+        color: white;
+        margin-left: 30px !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .title {
+        color: white;
+        font-size: 2.5rem;
+        margin-top: 0rem;
+        margin-left: 0rem;
+    }
+
+    .time {
+        text-align: left;
+        color: white;
+        margin-left: 30px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .time {
+        text-align: left;
+        color: white;
+        margin-left: 30px !important;
+    }
+
+    .title {
+        color: white;
+        font-size: 2.2rem !important;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .subtitle {
+        color: white;
+        font-size: 16px;
+        text-align: justify;
+        text-align: center;
+    }
+
+    .home_icon {
+        width: 45px;
+        align-items: center;
+        text-align: center;
+        margin-top: 15px;
+        margin-left: 35px;
+    }
+}
+
+.cont-sod {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    width: calc(100% + 16px);
+    padding-left: 1rem !important;
+    padding-top: 1rem !important;
+    padding-right: 1rem !important;
+    padding-bottom: 0rem !important;
+    background-color: #003366 !important;
+}
+
+.subtitle-cont {
+    font-family: Lato, sans-serif;
+    background-color: #003366;
+    padding-left: calc(3rem + 80px);
+    padding-bottom: 1rem;
+}
+
+.select-label {
+    color: white !important;
+}
